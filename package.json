@@ -1,0 +1,31 @@
+{
+  "name": "rate-my-roomie",
+  "version": "1.0.0",
+  "description": "\"to rate my roomie\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leann-labra/Rate-My-Roomie.git"
+  },
+  "author": "Leann Labra, Cherie Walker, Lilia Hernandez, Ricardo Garcia, and Aldo Ibuado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leann-labra/Rate-My-Roomie/issues"
+  },
+  "homepage": "https://github.com/leann-labra/Rate-My-Roomie#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "sequelize": "^6.3.5"
+  }
+}

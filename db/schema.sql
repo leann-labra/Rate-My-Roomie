@@ -1,0 +1,3 @@
+DROP IF DATABASE EXISTS roomie_db;
+
+CREATE DATABASE roomie_db;
