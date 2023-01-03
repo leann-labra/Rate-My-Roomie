@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
@@ -17,13 +17,13 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true,
       validate: {
         isEmail: true,
@@ -51,7 +51,5 @@ User.init(
     modelName: 'user',
   }
 );
-
-module.exports = User;
 
 module.exports = User;

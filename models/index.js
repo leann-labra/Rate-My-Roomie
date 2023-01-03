@@ -1,6 +1,18 @@
-const User = require('./user');
-const Posts = require('./roommatePosts.js');
-const Comments = require('./comment');
+const User = require('./User');
+const Post = require('./RoommatePosts');
+const Comments = require('./Comments');
 
 
-module.exports = {User, Posts, Comments};
+Post.belongsTo(User, {
+    foreign_key: 'user_id'
+});
+
+Post.hasMany(Comments, {
+    foreign_key: 'post_id'
+});
+
+Comments.belongsTo(User, {
+    foreign_key: 'post_id'
+})
+
+module.exports = {User, Post, Comments};
