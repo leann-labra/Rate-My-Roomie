@@ -1,3 +1,3 @@
 DROP IF DATABASE EXISTS roomie_db;
-
 CREATE DATABASE roomie_db;
+USE DATABASE roomie_db;
