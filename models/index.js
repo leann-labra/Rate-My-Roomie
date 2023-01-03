@@ -1,3 +1,6 @@
 const User = require('./user');
-const Roomies = require('./roommates');
-module.exports = { User, Roomies };
+const Posts = require('./roommatePosts.js');
+const Comments = require('./comment');
+
+
+module.exports = {User, Posts, Comments};
