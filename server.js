@@ -30,6 +30,8 @@ app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join('public')));
+
 
 app.use(routes);
 
@@ -40,3 +42,5 @@ sequelize.sync({ force: false }).then(() => {
     )
   );
 });
+
+//----copied from boilerplate activities server.js----//
