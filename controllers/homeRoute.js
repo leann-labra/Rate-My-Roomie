@@ -4,7 +4,9 @@ const { User, Post, Comments } = require("../models");
 // getting homepage from handlebars
 router.get("/", async (req, res) => {
   try {
-    res.render("main");
+    res.render("home", {
+      // layout: 'main'
+    });
   } catch (err) {
     res.status(500).json(err);
   }
