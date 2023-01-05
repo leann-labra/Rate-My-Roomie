@@ -1,0 +1,38 @@
+
+<section id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Rate Your Roommate</h1>
+            <h2 class="brand-tagline">know before you room</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button toHome" href="views/home.handlebars">ADD A ROOMMATE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    {{!-- list of short roommate posts --}}
+    <section id="list" class="pure-u-1 roommatePosts">
+        {{> roommatePost}}
+    </section>
+
+    {{!-- single roommate post expanded --}}
+    <section id="main" class="pure-u-1 individualPosts">
+        {{> expandedRoommatePost}}
+    </section>
+  
+
+    {{!-- PAGE FOOTER --}}
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="views/home.handlebars" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="https://github.com/leann-labra/Rate-My-Roomie.git" class="pure-menu-link">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+</section>

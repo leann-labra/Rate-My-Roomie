@@ -65,16 +65,31 @@ label {
     margin: 10px;
 }
 
-.two-roommates {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    height: 550px;
-    width: 800px;
-}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+}
+
+p {
+    font-family: 'neotericregular', Times, serif;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.roommate {
+    font-family: 'neotericregular', Times, serif;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.info {
+    font-family: 'neotericregular', Times, serif;
+    color: #34495e;
+}
+
+.contact-us, .info {
+    text-align: center;
+    font-size: 40px;
 }
 
 /*
@@ -219,6 +234,7 @@ a.pure-button-primary {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
+    font-size: 20px;
 }
 
 /*
@@ -248,6 +264,10 @@ a.pure-button-primary {
     margin: 2em 0 1em;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: white;
@@ -269,6 +289,183 @@ a.pure-button-primary {
 .ribbon {
     background: #2d3e50;
     color: #aaa;
+}
+
+/* STYLES ON ROOMMATEPAGE */
+/* LAYOUT */
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+/* NAVBAR STYLE ON ROOMMATEPAGE */
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+/*  -- POST STYLES --
+ * Styles relevant to the posts found on roommatePost and expandedRoommatePost.
+ */ 
+/* .email-count {
+    color: rgb(75, 113, 151);
+}
+
+.email-label-personal,
+.email-label-work,
+.email-label-travel {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+.email-label-personal {
+    background: #ffc94c;
+}
+.email-label-work {
+    background: #41ccb4;
+}
+.email-label-travel {
+    background: #40c365;
+}
+
+
+/* Email Item Styles */
+/*.post-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+}
+    .email-avatar {
+        border-radius: 3px;
+        margin-right: 0.5em;
+    }
+    .email-name,
+    .email-subject {
+        margin: 0;
+    }
+    .email-name {
+        text-transform: uppercase;
+        color: #999;
+    }
+    .email-desc {
+        font-size: 80%;
+        margin: 0.4em 0;
+    } */
+
+.post-item-selected {
+    background: #eee;
+}
+.post-item-unread {
+    border-left: 6px solid #1b98f8;
+}
+
+
+/* Post Content Styles */
+.post-content-header, .post-content-body, .post-content-footer {
+    padding: 1em 2em;
+}
+    .post-content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .post-content-title {
+            margin: 0.5em 0 0;
+        }
+        .post-content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .post-content-subtitle span {
+                color: #999;
+            }
+    .post-content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .post-content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }
+
+    .post-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    
+/* FOOTER */
+.footer {
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
 }
 
 /* This is the class used for the footer */
