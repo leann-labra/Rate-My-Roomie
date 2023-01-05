@@ -65,16 +65,31 @@ label {
     margin: 10px;
 }
 
-.two-roommates {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    height: 550px;
-    width: 800px;
-}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+}
+
+p {
+    font-family: 'neotericregular', Times, serif;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.roommate {
+    font-family: 'neotericregular', Times, serif;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.info {
+    font-family: 'neotericregular', Times, serif;
+    color: #34495e;
+}
+
+.contact-us, .info {
+    text-align: center;
+    font-size: 40px;
 }
 
 /*
@@ -219,6 +234,7 @@ a.pure-button-primary {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
+    font-size: 20px;
 }
 
 /*
@@ -246,6 +262,10 @@ a.pure-button-primary {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
