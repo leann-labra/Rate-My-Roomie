@@ -30,7 +30,7 @@ app.engine(
   //     layoutsDir: __dirname + "/views/layouts",
   //   }
   hbs.engine
-  );
+);
 
 app.set("view engine", "handlebars");
 
