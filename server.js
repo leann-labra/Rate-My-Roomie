@@ -25,10 +25,6 @@ const sess = {
 
 app.engine(
   "handlebars",
-  // handlebars(
-  //   {
-  //     layoutsDir: __dirname + "/views/layouts",
-  //   }
   hbs.engine
 );
 
@@ -49,3 +45,5 @@ sequelize.sync({ force: false }).then(() => {
     )
   );
 });
+
+//----copied from boilerplate activities server.js----//

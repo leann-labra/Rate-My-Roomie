@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'neotericregular';
+    src: url('../fonts/Neoteric-32A8.ttf') format('woff2'),
+         url('../fonts/Neoteric-32A8.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'primetimeregular';
+    src: url('../fonts/PrimetimeRegular-vOL9.ttf') format('woff2'),
+         url('../fonts/PrimetimeRegular-vOL9.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'crotah_free_versionitalic';
+    src: url('../fonts/CrotahFreeVersionItalic-z8Ev3.ttf') format('woff2'),
+         url('../fonts/CrotahFreeVersionItalic-z8Ev3.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -22,13 +50,28 @@ h5,
 h6,
 label {
     color: #34495e;
+    font-family: 'neotericregular', Arial, sans-serif;
 }
 
 .logo {
-    width: 600px;
+    width: 500px;
     margin: -200px;
+    position: relative;
+    top: -30px;
 }
 
+.logo1 {
+    width: 250px;
+    margin: 10px;
+}
+
+.two-roommates {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    height: 550px;
+    width: 800px;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -38,7 +81,7 @@ label {
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
  */
-.l-box {
+ .l-box {
     padding: 1em;
 }
 
@@ -137,7 +180,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);;
+    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -145,7 +188,7 @@ a.pure-button-primary {
     height: 88%;
     top: 0;
     left: 0;
-    position: fixed !important;
+    position: absolute;
 }
 
 .splash {
@@ -189,13 +232,12 @@ a.pure-button-primary {
     width: 100%;
     min-height: 12%;
     z-index: 2;
-    background: white;
-
 }
 
 /* We want to give the content area some more padding */
 .content {
     padding: 1em 1em 3em;
+
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -209,6 +251,10 @@ a.pure-button-primary {
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: white;
+}
+
+.content-head .content-head-ribbon {
+    padding-top: 20px;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
