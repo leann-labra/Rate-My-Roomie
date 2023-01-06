@@ -18,8 +18,9 @@
                         <a class="pure-button addRoommate" href="views/">ADD A ROOMMATE</a>
                     </li>
                     <li>
-                    {{#if loggedIn}}
+                    {{!-- {{#if logged_in}} --}}
                     <button id="logout" class="button-secondary pure-button">LOGOUT</button>
+                    {{!-- {{/if }} --}}
                     </li>
                 </ul>
             </nav>
@@ -31,7 +32,7 @@
         {{> roommatePost}}
         
     {{!-- possibly can use Lilia's javascript things as reference --}}
-    <script src="js/roommatePost.js"></script>
+    {{!-- <script src="js/roommatePost.js"></script> --}}
     </section>
 
     {{!-- single roommate post expanded --}}
@@ -39,7 +40,7 @@
         {{> expandedRoommatePost}}
 
     {{!-- use lilia's code as reference --}}
-    <script src="js/roommatePost.js"></script>
+   {{!-- <script src="js/roommatePost.js"></script> --}}
     </section>
   
 
@@ -53,3 +54,5 @@
                 </div>
             </div>
 </section>
+<script src="./js/logout.js" </script>
+<script src="./js/loginuser.js"></script>
