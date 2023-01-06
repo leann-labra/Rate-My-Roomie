@@ -71,6 +71,13 @@ label {
     height: auto;
 }
 
+.roommateimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 p {
     font-family: 'neotericregular', Times, serif;
     font-size: 15px;
