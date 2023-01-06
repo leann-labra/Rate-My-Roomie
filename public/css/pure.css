@@ -40,6 +40,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
+    margin: 0;
 }
 
 h1,
@@ -109,7 +110,18 @@ p {
     text-align: center;
 }
 
+h2, .content, label {
+    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
+    color: whitesmoke;
+}
 
+/* styled image */
+.signing-upimg {
+     display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      width: 60%;
+}
 
 /*
  * -- PURE FORM STYLES --
@@ -139,17 +151,12 @@ p {
     padding: 0.5em 2em;
     border-radius: 5px;
 }
-/* login/get started button */
+
 a.pure-button-primary {
     background: white;
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
-}
-/* logout button */
-.button-secondary {
-    background: rgb(66, 184, 221);
-    /* this is a light blue */
 }
 
 
@@ -253,6 +260,7 @@ a.pure-button-primary {
     width: 100%;
     min-height: 12%;
     z-index: 2;
+    left: 0;
 }
 
 /* We want to give the content area some more padding */
