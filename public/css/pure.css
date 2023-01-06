@@ -139,12 +139,17 @@ p {
     padding: 0.5em 2em;
     border-radius: 5px;
 }
-
+/* login/get started button */
 a.pure-button-primary {
     background: white;
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
+}
+/* logout button */
+.button-secondary {
+    background: rgb(66, 184, 221);
+    /* this is a light blue */
 }
 
 
