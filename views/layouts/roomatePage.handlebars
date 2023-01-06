@@ -7,8 +7,19 @@
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="pure-button toHome" href="views/">ADD A ROOMMATE</a>
+                    {{!-- search site for roommate input --}}
+                    <li>
+                        <label for="site-search">Search Roommate:</label>
+                        <input type="search" id="site-search" name="q">
+                        <button>Search</button>
+                    </li>
+                    {{!-- button to link to add a roommate page --}}
+                     <li class="nav-item">
+                        <a class="pure-button addRoommate" href="views/">ADD A ROOMMATE</a>
+                    </li>
+                    <li>
+                    {{#if loggedIn}}
+                    <button id="logout" class="button-secondary pure-button">LOGOUT</button>
                     </li>
                 </ul>
             </nav>
@@ -16,13 +27,19 @@
     </div>
 
     {{!-- list of short roommate posts --}}
-    <section id="list" class="pure-u-1 roommatePosts">
+    <section id="list" class="pure-u-1 roommatePosts" tabindex="-1">
         {{> roommatePost}}
+        
+    {{!-- possibly can use Lilia's javascript things as reference --}}
+    <script src="js/roommatePost.js"></script>
     </section>
 
     {{!-- single roommate post expanded --}}
-    <section id="main" class="pure-u-1 individualPosts">
+    <section id="main" class="pure-u-1 individualPosts" tabindex="-1">
         {{> expandedRoommatePost}}
+
+    {{!-- use lilia's code as reference --}}
+    <script src="js/roommatePost.js"></script>
     </section>
   
 
