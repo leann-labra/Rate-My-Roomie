@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
     console.log(
       `Now listening. Visit http://localhost:${PORT} to find a new roommate today!`
