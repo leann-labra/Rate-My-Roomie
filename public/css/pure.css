@@ -335,15 +335,21 @@ h3 {
     padding: 0;
 }
 
+/* .post-layout {
+    padding-left: 500px;
+    position: relative;
+} */
+
 .header {
     text-align: center;
     top: auto;
-    margin: 3em auto;
+    /* margin: 3em auto; */
 }
 
 .sidebar {
     background: rgb(61, 79, 93);
     color: #fff;
+
 }
 
 .brand-title,
@@ -359,6 +365,14 @@ h3 {
 }
 
 /* NAVBAR STYLE ON ROOMMATEPAGE */
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+
+
 .nav-list {
     margin: 0;
     padding: 0;
@@ -386,30 +400,7 @@ h3 {
 
 /*  -- POST STYLES --
  * Styles relevant to the posts found on roommatePost and expandedRoommatePost.
- */ 
-/* .email-count {
-    color: rgb(75, 113, 151);
-}
-
-.email-label-personal,
-.email-label-work,
-.email-label-travel {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 0.5em;
-    border-radius: 3px;
-}
-.email-label-personal {
-    background: #ffc94c;
-}
-.email-label-work {
-    background: #41ccb4;
-}
-.email-label-travel {
-    background: #40c365;
-}
-
+ 
 
 /* Email Item Styles */
 /*.post-item {
