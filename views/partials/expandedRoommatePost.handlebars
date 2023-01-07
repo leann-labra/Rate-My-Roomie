@@ -1,12 +1,13 @@
 <div class="post-content">
             <div class="post-content-header pure-g">
-                <div class="pure-u-1-2">
+                <div class="pure-u-1-2 rooommateInfo">
+                    {{!-- put in js to render --}}
                     <h1 class="post-content-title">{{name of roommate}}</h1>
                     <p class="post-content-subtitle">
                        <ul class="roommateDescription">
-                        Location Lived:<li>{{roommate.location}}</li>
-                        How Long Lived with Person:<li>{{roommate.duration}}</li>
-                        Age:<li>{{roommate.age}}</li>
+                        Location Lived:<li>${location}</li>
+                        How Long Lived with Person:<li>${duration}</li>
+                        Age:<li>${age}</li>
                        </ul> 
                     </p>
                 </div>
@@ -20,25 +21,21 @@
             <div class="post-content-body roommateContent">
                 {{!-- dynamically generated info from roommate Questionnaire --}}
             </div>
- </div>
-
-{{!-- might cut out if we don't have time to do --}}
- <section class="commentContainer">
-   <input type="text">
-    {{!-- append each text input as new comment container --}}
-    <button>to save input and append comment</button>
+</div>
 
 {{!-- socket.io chat to discuss post --}}
-<section id="chat-container">
-<article>
+<section id="roommate-chat-container">
+    <article id="chat-box">
 
-</article>
-<form class="pure-form">
-    <div id="user-feedback">
-        <input type="text" class="pure-input-rounded" />
-        <button type="submit" class="pure-button submit-chat-input">Send</button>
-    </div>
-<script src="js/chatroom.js"></script>s
-</form>
+    </article>
+    <form class="pure-form">
+        <div id="user-feedback">
+            <input type="text" class="pure-input-rounded chat-put" />
+            <button type="submit" class="pure-button submit-chat-input">Send</button>
+        </div>
+        
+    <script src="js/chatroom.js"></script>s
+    </form>
 </section>
+
 </section>
