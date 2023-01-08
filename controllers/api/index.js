@@ -1,10 +1,8 @@
-const router = require('express').Router();
-const post = require('./roommatePost');
-const user = require('./user');
-const comment = require('./comments');
+const router = require("express").Router();
+const post = require("./prevPost");
+const user = require("./user");
 
-router.use('/post', post);
-router.use('/user', user);
-router.use('/comment', comment);
+router.use("/post", post);
+router.use("/user", user);
 
 module.exports = router;
