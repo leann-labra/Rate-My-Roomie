@@ -27,10 +27,13 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    state: {
+    county: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    ontime_payments{
+      
+    }
     user_id: {
       type: DataTypes.INTEGER,
       references: {
