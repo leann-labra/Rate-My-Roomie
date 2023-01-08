@@ -6,8 +6,6 @@ async function logOut(e){
         method: 'POST', 
         headers: { 'Content-Type': 'application/json'}
     })
-    
-
     if(res.ok){
         document.location.replace('/')
     }else{

@@ -1,35 +1,55 @@
-const router = require('express').Router();
-const { User, Post, Comments } = require("../models");
+const router = require("express").Router();
+const { User, Post } = require("../../models");
 
 // get request for roommatePage
 //roommatePage should populate with posts
-
-const router = require('express').Router();
-const { User, Post, Comments } = require("../models");
-
-// get request for roommatePage
-//roommatePage should populate with posts
-const roommatePost = require("../models/Post");
-const { route } = require('./roommatePost');
-
-//create a Post
-router.post('/api/', (req, res) => {
-    //using create() to insert post information into the model
-    roommatePost.create({
-        // info from lilia's roommatePage
-    })
-
+// Create New Post
+router.post("/", (req, res) => {
+  // create post with user input; user id from session data
+  Post.create({
+    title: req.body.title,
+    post_content: req.body.content,
+    user_id: req.session.user_id,
+  })
     .then((newPost) => {
-        //save new post as json object
-        res.json(newPost);
+      res.json(newPost);
     })
-    //to catch any sending errors
     .catch((err) => {
-        res.status(400).json(err)
+      console.log(err);
+      res.status(500).json({ msg: "An Error Occurred!", err });
+    });
+});
+
+// Update Post
+router.put("/:id", (req, res) => {
+  Post.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((updatedPost) => {
+      res.json(updatedPost);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ msg: "An Error Occurred!", err });
+    });
+});
+
+// Delete Post
+router.delete("/:id", (req, res) => {
+  Post.destroy({
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((delPost) => {
+      res.json(delPost);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ msg: "An Error Occurred!", err });
     });
 });
 
 module.exports = router;
-//get request for 
-module.exports = router;
-
