@@ -40,6 +40,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
+    margin: 0;
 }
 
 h1,
@@ -68,6 +69,13 @@ label {
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+}
+
+.roommateimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 p {
@@ -109,7 +117,18 @@ p {
     text-align: center;
 }
 
+h2, .content, label {
+    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
+    color: whitesmoke;
+}
 
+/* styled image */
+.signing-upimg {
+     display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      width: 60%;
+}
 
 /*
  * -- PURE FORM STYLES --
@@ -139,17 +158,12 @@ p {
     padding: 0.5em 2em;
     border-radius: 5px;
 }
-/* login/get started button */
+
 a.pure-button-primary {
     background: white;
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
-}
-/* logout button */
-.button-secondary {
-    background: rgb(66, 184, 221);
-    /* this is a light blue */
 }
 
 
@@ -253,6 +267,7 @@ a.pure-button-primary {
     width: 100%;
     min-height: 12%;
     z-index: 2;
+    left: 0;
 }
 
 /* We want to give the content area some more padding */
@@ -320,15 +335,21 @@ h3 {
     padding: 0;
 }
 
+/* .post-layout {
+    padding-left: 500px;
+    position: relative;
+} */
+
 .header {
     text-align: center;
     top: auto;
-    margin: 3em auto;
+    /* margin: 3em auto; */
 }
 
 .sidebar {
     background: rgb(61, 79, 93);
     color: #fff;
+
 }
 
 .brand-title,
@@ -344,6 +365,14 @@ h3 {
 }
 
 /* NAVBAR STYLE ON ROOMMATEPAGE */
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+
+
 .nav-list {
     margin: 0;
     padding: 0;
@@ -371,30 +400,7 @@ h3 {
 
 /*  -- POST STYLES --
  * Styles relevant to the posts found on roommatePost and expandedRoommatePost.
- */ 
-/* .email-count {
-    color: rgb(75, 113, 151);
-}
-
-.email-label-personal,
-.email-label-work,
-.email-label-travel {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 0.5em;
-    border-radius: 3px;
-}
-.email-label-personal {
-    background: #ffc94c;
-}
-.email-label-work {
-    background: #41ccb4;
-}
-.email-label-travel {
-    background: #40c365;
-}
-
+ 
 
 /* Email Item Styles */
 /*.post-item {
