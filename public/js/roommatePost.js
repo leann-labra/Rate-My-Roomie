@@ -27,3 +27,4 @@ async function createPost(e) {
 }
 
 document.getElementById("create-post").addEventListener("submit", createPost);
+

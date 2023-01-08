@@ -30,6 +30,10 @@
 
     {{!-- list of short roommate posts --}}
     <section id="list" class="pure-u-1 roommatePosts" tabindex="-1">
+        {{!-- {{#each posts as |post| }} --}}
+        {{> prevPost}}
+    {{!-- possibly can use Lilia's javascript things as reference --}}
+    <script src="js/roommatePost.js"></script>
         {{#each posts as |post| }}
         {{> prevPost}}
         {{/each}}
@@ -40,6 +44,12 @@
     {{!-- single roommate post expanded --}}
     <section id="main" class="pure-u-1 individualPosts" tabindex="-1">
         {{> expPost}}
+
+    {{!-- use lilia's code as reference --}}
+    <script src="js/roommatePost.js"></script>
+    </section>
+</section>
+<script src="./js/logout.js" </script>
         
         {{!-- use lilia's code as reference --}}
             {{!-- <script src="js/roommatePost.js"></script> --}}
