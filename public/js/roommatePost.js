@@ -3,14 +3,18 @@
 async function createPost(e) {
     e.preventDefault();
   
-    const name = document.getElementById("post-title roommateName").value;
-    const post_content = document.getElementById("post-description").value;
+    const title = document.getElementById("title").value;
+    const first_name = document.getElementById("first_name").value;
+    const last_name = document.getElementById("last_name");
+    const city = document.getElementById("city").value;
+
   
     const res = await fetch("/api/roommatePost", {
       method: "POST",
       body: JSON.stringify({
-        name,
-        post_content,
+        title,
+        city,
+        
       }),
       headers: { "Content-Type": "application/json" },
     });
