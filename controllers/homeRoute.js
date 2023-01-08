@@ -11,10 +11,20 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//Gets roomate page
+
+//Gets roommate page
 router.get("/roommatepage", async (req, res) => {
   try {
     res.render("roommatePage");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+//Gets form to add roommatePost
+router.get("/addRoommate", async (req, res) => {
+  try {
+    res.render("addRoommate");
   } catch (err) {
     res.status(500).json(err);
   }
