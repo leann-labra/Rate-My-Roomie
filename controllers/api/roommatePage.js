@@ -1,4 +1,5 @@
-const router = require("express").Router();
+
+const router = require('express').Router();
 const { User, Post } = require("../../models");
 
 // get request for roommatePage
@@ -31,6 +32,32 @@ router.put("/:id", (req, res) => {
       res.json(updatedPost);
     })
     .catch((err) => {
+
+    // create post with user input; user id from session data
+    Post.create({
+      title:req.body.title,
+      post_content:req.body.content,
+      user_id:req.session.user_id
+    })
+      .then(newPost => {
+        res.json(newPost);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json({ msg: "An Error Occurred!", err });
+      });
+});
+
+// Update Post 
+router.put("/:id", (req, res) => {
+  Post.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+    }).then(updatedPost => {
+      res.json(updatedPost);
+    })
+    .catch(err => {
       console.log(err);
       res.status(500).json({ msg: "An Error Occurred!", err });
     });

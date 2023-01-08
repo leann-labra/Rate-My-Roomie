@@ -43,14 +43,14 @@ body {
     margin: 0;
 }
 
-.container {
+.rateUL {
     text-align: center;
+    font-size: 20px;
 }
 
-.rateUL, .post-content {
-    display: inline-block;
-    text-align: left;
-    font-size: 20px;
+.post-content {
+    position: absolute;
+    left: 500px;
 }
 
 h1,
@@ -98,8 +98,6 @@ p {
     color: whitesmoke;
 }
 
-
-
 .roommate {
     font-family: 'neotericregular', Times, serif;
     font-size: 30px;
@@ -116,31 +114,6 @@ p {
     font-size: 40px;
 }
 
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -185,7 +158,7 @@ h2, .content, label {
     border: 2px solid #ddd;
     box-shadow: none;
     font-size: 100%;
-    width: 100%;
+    width: 50%;
     margin-bottom: 1em;
 }
 
@@ -198,9 +171,7 @@ h2, .content, label {
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
-    width: 100%;
     cursor: pointer;
-    border-color: lightblue;
 }
 
 a.pure-button-primary {
@@ -215,6 +186,8 @@ a.pure-button-primary {
     width: 37%;
     height: 1000px;
 }
+
+
 
 /*
  * -- MENU STYLES --
@@ -234,6 +207,10 @@ a.pure-button-primary {
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
+}
+
+.pure-menu-heading {
+    color: white;
 }
 
 .home-menu .pure-menu-heading {
@@ -421,7 +398,6 @@ h3 {
     /* width: 10em; */
 }
 
-
 .nav-list {
     margin: 0;
     padding: 0;
@@ -446,6 +422,39 @@ h3 {
     border: 2px solid rgb(61, 146, 201);
     text-decoration: none;
 }
+
+/* helps the sidebar look clean */
+
+.sidenav {
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d3e50;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: whitesmoke;
+  }
+
+#pure-input-rounded-side {
+    padding: 15px; 
+    width: 100%;
+    height: 15px;    
+}
+
 
 /*  -- POST STYLES --
  * Styles relevant to the posts found on roommatePost and expandedRoommatePost.
