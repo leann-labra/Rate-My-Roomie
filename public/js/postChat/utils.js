@@ -2,8 +2,8 @@
 const getName = async (event) => {
   event.preventDefault();
 
-  const username = document.querySelector("#email-login").value.trim();
-
+  const username = document.querySelector("#username").value.trim();
+  
   if (username) {
     const response = await fetch("api/users/login", {
       method: "POST",
