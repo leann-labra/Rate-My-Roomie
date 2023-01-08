@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { User, Post } = require("../../models");
+const { Post } = require("../../models");
 
 // Create New Post
 router.post("/", (req, res) => {
 
     // create post with user input; user id from session data
     Post.create({
-      name:req.body.name,
+      title:req.body.title,
       post_content:req.body.content,
       user_id:req.session.user_id
     })
