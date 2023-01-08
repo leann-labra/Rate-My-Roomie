@@ -5,15 +5,15 @@ const chatboxEl = byId("chat-box");
 const chatInputEl = byId("chat-input");
 const submitChatEl = byId("submit-chat-input");
 
-// pull name from model
+// pull name from login or signup page
 const userName = getName();
 
 const updateHTML = (name, chat, sent) => {
-  chatDialogEl.innerHTML += `
-    <div class=" message${sent ? " sent" : ""}">
-      <h4>${name}:</h4>
-      <p>${chat}</p>
-    </div>`;
+  // chatDialogEl.innerHTML += `
+  //   <div class=" message${sent ? " sent" : ""}">
+  //     <h4>${name}:</h4>
+  //     <p>${chat}</p>
+  //   </div>`;
 
   // Keeps chat scrolling down as new messages created/received.
   chatDialogEl.scrollTop = chatDialogEl.scrollHeight;
