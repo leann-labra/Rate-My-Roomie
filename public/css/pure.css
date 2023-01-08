@@ -43,6 +43,16 @@ body {
     margin: 0;
 }
 
+.container {
+    text-align: center;
+}
+
+.rateUL, .post-content {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -84,6 +94,12 @@ p {
     color: whitesmoke;
 }
 
+.brand-title {
+    color: whitesmoke;
+}
+
+
+
 .roommate {
     font-family: 'neotericregular', Times, serif;
     font-size: 30px;
@@ -91,7 +107,7 @@ p {
 }
 
 .info {
-    font-family: 'neotericregular', Times, serif;
+    font-family: 'primetimeregular', Times, serif;
     color: #34495e;
 }
 
@@ -100,6 +116,31 @@ p {
     font-size: 40px;
 }
 
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -153,10 +194,13 @@ h2, .content, label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #1f8dd6;
+    background-color: transparent;
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    border-color: lightblue;
 }
 
 a.pure-button-primary {
@@ -166,6 +210,11 @@ a.pure-button-primary {
     font-size: 120%;
 }
 
+.column {
+    float: left;
+    width: 37%;
+    height: 1000px;
+}
 
 /*
  * -- MENU STYLES --

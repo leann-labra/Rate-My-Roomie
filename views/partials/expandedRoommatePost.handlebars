@@ -10,11 +10,20 @@
                        </ul> 
                     </p>
                 </div>
+                {{!-- where we can possibly use socket.io to chat with person --}}
+                <div class="post-content-controls pure-u-1-2">
+                    <button class="secondary-button pure-button">Chat</button>
+                    <button class="secondary-button pure-button">Comment</button>
+                </div>
             </div>
+            </div>
+ </div>
 
-            <div class="post-content-body roommateContent">
-                {{!-- dynamically generated info from roommate Questionnaire --}}
-            </div>
+{{!-- might cut out if we don't have time to do --}}
+ <section class="commentContainer">
+   <input type="text">
+    {{!-- append each text input as new comment container --}}
+    <button>to save input and append comment</button>
 
 {{!-- socket.io chat to discuss post --}}
     <section id="chat-container">
