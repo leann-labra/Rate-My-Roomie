@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post, Comments } = require("../../models");
+const { User, Post } = require("../../models");
 
 // get request for roommatePage
 //roommatePage should populate with posts
