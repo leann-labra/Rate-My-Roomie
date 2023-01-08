@@ -23,7 +23,7 @@ router.get("/roommatepage", async (req, res) => {
 //when you sign up, will direct you to roommatePage
 router.get("/signup", (req, res) => {
   if (req.session.logged_in) {
-    res.render("/roommatepage");
+    res.redirect("/roommatepage");
     return;
   }
   res.render("signup");
@@ -32,7 +32,7 @@ router.get("/signup", (req, res) => {
 //getting login page from the main page
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
-    res.render("roommatepage");
+    res.redirect("roommatepage");
     return;
   }
   res.render("login");

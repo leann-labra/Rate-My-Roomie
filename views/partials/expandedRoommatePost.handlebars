@@ -1,5 +1,4 @@
-<div class="container">
-<div class="post-content">
+<section class="post-content">
             <div class="post-content-header pure-g">
                 <div class="pure-u-1-2">
                     <h1 class="post-content-title">name of roommate</h1>
@@ -11,24 +10,39 @@
                        </ul> 
                     </p>
                 </div>
-               </div>
+                {{!-- where we can possibly use socket.io to chat with person --}}
+                <div class="post-content-controls pure-u-1-2">
+                    <button class="secondary-button pure-button">Chat</button>
+                    <button class="secondary-button pure-button">Comment</button>
+                </div>
             </div>
             </div>
-
-            
  </div>
 
-{{!-- socket.io chat to discuss post --}}
-<section id="chat-container">
-<article>
+{{!-- might cut out if we don't have time to do --}}
+ <section class="commentContainer">
+   <input type="text">
+    {{!-- append each text input as new comment container --}}
+    <button>to save input and append comment</button>
 
-</article>
-<form class="pure-form">
-    <div id="user-feedback">
-        <input type="text" class="pure-input-rounded" />
-        {{!-- <button type="submit" class="pure-button submit-chat-input">Send</button> --}}
-    </div>
-<script src="js/postChat/chat.js"></script>
-</form>
-</section>
+{{!-- socket.io chat to discuss post --}}
+    <section id="chat-container">
+        <article>
+
+        </article>
+        <form class="pure-form">
+            <article id="chat-dialog">THIS IS THE CHAT</article>
+            <div id="user-feedback" style="display:inline">
+                <textarea 
+                type="text" 
+                class="pure-input-rounded"
+                name="chat-input"
+                id="chat-input"
+                maxlength="1250"
+                ></textarea>
+                <button type="submit" class="pure-button submit-chat-input">Send</button>
+            </div>
+        <script src="js/postChat/chat.js"></script>
+    </form>
+    </section>
 </section>

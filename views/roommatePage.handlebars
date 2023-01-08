@@ -1,5 +1,5 @@
-<div class="content">
-<section id="layout" class="pure-g">
+<section class="pure-g">
+
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
             <h1 class="brand-title">Rate Your Roommate</h1>
@@ -9,53 +9,57 @@
             <nav class="sidenav">
                 <ul class="nav-list">
                     {{!-- search site for roommate input --}}
-                    <li>
-                        <label for="site-search">Search Roommate:</label>
-                        <input type="search" id="site-search" name="q">
-                        <button>Search</button>
-                    </li>
-                    {{!-- button to link to add a roommate page --}}
-                     <li class="nav-item">
-                        <a class="pure-button addRoommate" href="views/">ADD A ROOMMATE</a>
-                    </li>
-                    <li>
-                    {{!-- {{#if logged_in}} --}}
-                    <button id="logout" class="pure-button">LOGOUT</button>
-                    {{!-- {{/if }} --}}
-                    </li>
+                    <div class="pure-menu custom-restricted-width">
+                        <span class="pure-menu-heading">MENU</span>
+                        <ul class="pure-menu-list">
+                            {{!-- SEARCH ROOMMATE --}}
+                            <li class="pure-menu-item">
+                                <form class="pure-form inline">
+                                    <input type="text" class="pure-input-rounded" />
+                                    <button type="submit" class="pure-button">Search</button>
+                                </form>
+                            </li>
+                            {{!--  --}}
+                            <li class="pure-menu-item">
+                                <a class="pure-button addRoommate" href="views/">ADD A ROOMMATE</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <button id="logout" class="button-secondary pure-button">LOGOUT</button>
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
             </nav>
         </div>
     </div>
     </div>
 
-   <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Note Taker </a>
-      <div class="icons">
-        <i class="fas fa-save text-light save-note"></i>
-        <i class="fas fa-plus text-light new-note"></i>
-      </div>
-    
-    
+    <section class="post-layout">
+        {{!-- list of short roommate posts --}}
+        <section id="list" class="pure-u-1-2 roommatePosts" tabindex="-1">
+            {{> roommatePost}}
+        {{!-- possibly can use Lilia's javascript things as reference --}}
+        {{!-- <script src="js/roommatePost.js"></script> --}}
+        </section>
 
-    {{!-- list of short roommate posts --}}
-    <section id="list" class="pure-u-1 roommatePosts" tabindex="-1">
-        {{> roommatePost}}
-        
-    {{!-- possibly can use Lilia's javascript things as reference --}}
-    {{!-- <script src="js/roommatePost.js"></script> --}}
-    </section>
-
-    {{!-- single roommate post expanded --}}
-    <section id="main" class="pure-u-1 individualPosts" tabindex="-1">
-        {{> expandedRoommatePost}}
+        {{!-- single roommate post expanded --}}
+        <section id="main" class="pure-u-1 individualPosts" tabindex="-1">
+            {{> expandedRoommatePost}}
 
     {{!-- use lilia's code as reference --}}
    {{!-- <script src="js/roommatePost.js"></script> --}}
     </section>
   
 
-   
+    {{!-- PAGE FOOTER --}}
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="views/home.handlebars" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="https://github.com/leann-labra/Rate-My-Roomie.git" class="pure-menu-link">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
 </section>
-<script src="./js/logout.js"></script> 
+<script src="./js/logout.js" </script>
 <script src="./js/loginuser.js"></script>

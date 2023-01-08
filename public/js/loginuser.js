@@ -15,7 +15,7 @@ async function loginForm(e){
     })
 
     if(res.ok){
-        document.location.replace('/home')
+        document.location.replace('roommatepage')
     }else{
         alert('Unable to login!')
     }
