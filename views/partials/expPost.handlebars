@@ -8,9 +8,6 @@
                         Location Lived:<li>roommate.location</li>
                         How Long Lived with Person:<li>roommate.duration</li>
                         Age:<li>roommate.age</li>
-                        Location Lived:<li>${location}</li>
-                        How Long Lived with Person:<li>${duration}</li>
-                        Age:<li>${age}</li>
                        </ul> 
                     </p>
                 </div>
@@ -20,8 +17,6 @@
                     <button class="secondary-button pure-button">Comment</button>
                 </div>
             </div>
-            </div>
-</div>
 
 {{!-- socket.io chat to discuss post --}}
     <section id="chat-container">
@@ -41,39 +36,7 @@
                 <button type="submit" class="pure-button submit-chat-input">Send</button>
             </div>
         <script src="js/postChat/chat.js"></script>
-    </form>
-
-    </section>
-<section id="roommate-chat-container">
-    <article id="chat-box">
-
-    </article>
-    <form class="pure-form">
-        <div id="user-feedback">
-            <input type="text" class="pure-input-rounded chat-put" />
-            <button type="submit" class="pure-button submit-chat-input">Send</button>
-        </div>
-        
-    <script src="js/postChat/chat.js"></script>
-    </form>
-
-</section>
-
-        </article>
-        <form class="pure-form">
-            <article id="chat-dialog">THIS IS THE CHAT</article>
-            <div id="user-feedback" style="display:inline">
-                <textarea 
-                type="text" 
-                class="pure-input-rounded"
-                name="chat-input"
-                id="chat-input"
-                maxlength="1250"
-                ></textarea>
-                <button type="submit" class="pure-button submit-chat-input">Send</button>
-            </div>
-        <script src="js/postChat/chat.js"></script>
-    </form>
+        </form>
 
     </section>
 </section>
