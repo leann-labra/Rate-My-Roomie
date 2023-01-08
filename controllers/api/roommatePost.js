@@ -1,14 +1,12 @@
 const router = require('express').Router();
-const { User, Post, Comments } = require("../../models");
+const { User, Post } = require("../../models");
 
-// get request for roommatePage
-//roommatePage should populate with posts
 // Create New Post
 router.post("/", (req, res) => {
 
     // create post with user input; user id from session data
     Post.create({
-      title:req.body.title,
+      name:req.body.name,
       post_content:req.body.content,
       user_id:req.session.user_id
     })
@@ -52,4 +50,3 @@ router.delete("/:id", (req, res) => {
 });
 
 module.exports = router;
-
