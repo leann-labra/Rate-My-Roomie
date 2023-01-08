@@ -32,7 +32,10 @@ router.put("/:id", (req, res) => {
       res.json(updatedPost);
     })
     .catch((err) => {
-
+        console.log(err);
+        res.status(500).json({ msg: "An Error Occurred!", err });
+      });
+      
     // create post with user input; user id from session data
     Post.create({
       title:req.body.title,
