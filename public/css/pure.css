@@ -171,7 +171,6 @@ h2, .content, label {
 }
 
 
-
 a.pure-button-primary {
     background: white;
     color: #1f8dd6;
@@ -390,8 +389,12 @@ h3 {
     color: whitesmoke;
 }
 
+.page-title {
+    text-align: center;
+}
+
 /* centers sign up form on page */
-#signup-form {
+#signup-form, #login-form {
     display: grid;
     place-items: center;
 }
