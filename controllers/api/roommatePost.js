@@ -7,7 +7,18 @@ router.post("/", (req, res) => {
     // create post with user input; user id from session data
     Post.create({
       title:req.body.title,
-      post_content:req.body.content,
+      first_name:req.body.first_name,
+      last_name:req.body.last_name,
+      age:req.body.age,
+      city:req.body.city,
+      county:req.body.county,
+      ontime_payments:req.body.ontime_payments,
+      communication:req.body.communication,
+      cleanliness:req.body.cleanliness,
+      friendly:req.body.friendly,
+      guests:req.body.guests,
+      lease_length:req.body.lease_length,
+      comments:req.body.comments,
       user_id:req.session.user_id
     })
       .then(newPost => {
