@@ -16,8 +16,7 @@ async function createPost(e) {
   const friendly = document.getElementById("friendly").value;
   const guests = document.getElementById("guests").value;
   const comments = document.getElementById("comments").value;
-
-
+  
   const res = await fetch("/api/post", {
     method: "POST",
     body: JSON.stringify({
@@ -37,7 +36,7 @@ async function createPost(e) {
     }),
     headers: { "Content-Type": "application/json" },
   });
-  console.log(res);
+  
   if (res.ok) {
     document.location.replace("/roommatePage");
   } else {
