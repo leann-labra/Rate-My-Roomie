@@ -189,10 +189,13 @@ h2, .content, label {
     cursor: pointer;
     text-align: center;    
     width: 300px;  
-
-
 }
 
+a.pure-button-secondary {
+    background: transparent;
+    color: white;
+    width: 48%;
+}
 
 a.pure-button-primary {
     background: white;
@@ -420,9 +423,15 @@ h3 {
 }
 
 /* centers sign up form on page */
-#signup-form, #login-form, #create-post {
+#signup-form, #login-form {
     display: grid;
     place-items: center;
+}
+
+#create-post {
+    margin: 0 auto !important;
+    max-width: 600px !important;
+    width: 600px !important;
 }
 
 /* styled image */
