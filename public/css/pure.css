@@ -382,12 +382,15 @@ h3 {
 .brand-tagline {
     margin: 0;
 }
+
 .brand-title {
+    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
+    color: #2d3e50;
     text-transform: uppercase;
 }
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: whitesmoke;
 }
 
 /* NAVBAR STYLE ON ROOMMATEPAGE */
@@ -435,6 +438,7 @@ h3 {
     background-color: #2d3e50;
     overflow-x: hidden;
     padding-top: 20px;
+    text-align: center;  
   }
   
   .sidenav a {
@@ -449,12 +453,15 @@ h3 {
     color: whitesmoke;
   }
 
-#pure-input-rounded-side {
+#site-search {
     padding: 15px; 
     width: 100%;
     height: 15px;    
 }
 
+#logout {
+    border: 2px solid rgb(61, 146, 201);
+}
 
 /*  -- POST STYLES --
  * Styles relevant to the posts found on roommatePost and expandedRoommatePost.
