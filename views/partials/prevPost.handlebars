@@ -2,33 +2,13 @@
                 <!-- A single blog post -->
                 <section id="preview-post" class="post-card postContainer">
                     <header class="post-header">
-                        <h1>{{title}}</h1>
+                       <h1><a href="/expPost" class="pure-menu-link">{{title}}</a></h1>
                     </header>
-
                     <div class="post-description">
                         <ul class="post-preview">
                             <li>{{first_name}} {{last_name}}</li>
                             <li>{{city}}</li> 
                         </ul>
                     </div>
-                    <p class="post-subtitle">
-                        Post made by: {{user.name}} on {{{format_date}}}
-                    <p>
                 </section>
-                <section class="post-card postContainer">
-                    <header class="post-header">
-                        <h1 id="post-title">DUMMY TITLE</h1>
-                    </header>
-
-                    <div class="post-description">
-                        <ul class="post-preview">
-                            <li>someone's name</li>
-                            <li>city, state</li>
-                        </ul>
-                    </div>
-                    <p class="post-subtitle">
-                        Post made by: {{user.username}} on {{{format_date}}}
-                    <p>
-                </section>
-    <button id="deleteBtn" class="button-secondary pure-button">DELETE POST</button>
     <script src="./js/newPost.js"></script>
