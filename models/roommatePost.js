@@ -31,26 +31,6 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    ontime_payments:{
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    communication:{
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    cleanliness:{
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    friendly:{
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    guests:{
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     comments:{
       type: DataTypes.STRING,
       allowNull: true,
