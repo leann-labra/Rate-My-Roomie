@@ -26,20 +26,16 @@
                 </ul>
             </nav>
         </div>
-    </div>
-
-    {{!-- list of short roommate posts --}}
-    <section id="list" class="pure-u-1 roommatePosts" tabindex="-1">
-        {{!-- {{#each posts as |post| }} --}}
-        {{> prevPost}}
-    {{!-- possibly can use Lilia's javascript things as reference --}}
-    <script src="js/roommatePost.js"></script>
-        {{#each posts as |post| }}
-        {{> prevPost}}
-        {{/each}}
-        {{!-- possibly can use Lilia's javascript things as reference --}}
-            {{!-- <script src="js/roommatePost.js"></script> --}}
-    </section>
+        {{!-- list of preview posts --}}
+        <div class="allpost-container">
+            {{!-- {{#if post.length}} --}}
+            <div id="list" class="previewPosts" tabindex="-1">
+                {{!-- making an each loop from a block parameter --}}
+                {{#each posts as |post| }}
+                    {{> prevPost post}}
+                {{/each}}
+            </div>
+            {{!-- {{/if}} --}}
 
     {{!-- single roommate post expanded --}}
     <section id="main" class="pure-u-1 individualPosts" tabindex="-1">
