@@ -434,6 +434,8 @@ h3 {
     width: 600px !important;
 }
 
+
+
 /* styled image */
 .signing-upimg {
     display: block;
@@ -486,15 +488,16 @@ h3 {
 }
 
 .nav-list > .nav-item > a {
-    padding: 5%;
+    padding: 3%;
     width: 100%;
     font-size: 200%;
 }
 
 .nav-list > .nav-item > a, input{
-    padding: 5%;
+    border-radius: 8px;
+    padding: 2%;
     width: 100%;
-    font-size: 200%;
+    font-size: 100%;
 }
 #pure-input-rounded-side {
     padding: 0px; 
