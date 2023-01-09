@@ -184,7 +184,9 @@ a.pure-button-primary {
     height: 1000px;
 }
 
-
+.white{
+    color:white;
+}
 
 /*
  * -- MENU STYLES --
@@ -512,6 +514,7 @@ section {
     padding: 10px;
     margin: 10px;
     height: 100px;
+}
 
 #logout {
     border: 2px solid rgb(61, 146, 201);

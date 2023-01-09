@@ -7,15 +7,16 @@
 
                     <div class="post-description">
                         <ul class="post-preview">
-                            {{!-- <li>{{post.first_name}} {{post.last_name}}</li> --}}
-                            {{!-- <li>{{post.city, post.state}}</li> --}}
+                            {{#each posts }}
+                            <li>{{first_name}} {{last_name}}</li>
+                            <li>{{post.city}}</li> 
                         </ul>
                     </div>
                     <p class="post-subtitle">
-                        Post made by: {{user.username}} on {{{format_date}}}
+                        Post made by: {{user.name}} on {{{format_date}}}
                     <p>
                 </section>
-
+                        {{/each}} 
                 <section class="post-card postContainer">
                     <header class="post-header">
                         <h1 id="post-title">DUMMY TITLE</h1>
