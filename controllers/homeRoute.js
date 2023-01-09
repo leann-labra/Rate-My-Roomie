@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const { User, Post } = require("../models");
+const { User, Post} = require("../models");
+
 
 // getting homepage from handlebars
 router.get("/", async (req, res) => {

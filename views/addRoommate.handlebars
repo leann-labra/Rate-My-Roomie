@@ -2,15 +2,11 @@
 
     {{!--adding name, last name, city, state form --}}
     <div class="content">
-
-        <form class="pure-form pure-form-stacked">
-            <fieldset>   
-                <h2 class="content-head is-center">Post your Roommate!</h2>
-            </fieldset>
-            
-        <section>      
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
+    <form id="create-post" class="pure-form pure-form-stacked">
+        <fieldset>   
+            <h2 class="content-head is-center">Post your Roommate!</h2>
+            <div class"pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
                     <label for="first-name">Post Title</label>
                     <input type="text" id="title" class="pure-u-23-24" />
                     <label for="first-name">First Name</label>
@@ -19,16 +15,35 @@
                     <input type="text" id="first-name" class="pure-u-23-24" />
                     <label for="-city">City</label>
                     <input type="text" id="city" class="pure-u-23-24" />
-                    <label for="multi-state">State</label>
-                    <select id="multi-state" class="pure-input-1-2">
-                            <option>AL</option>
-                            <option>CA</option>
-                            <option>IL</option>
-                            <option>NY</option>
+                      
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="county">County</label>
+                    <select id="county" class="pure-input-1-2">
+                        <option>San Bernardino County</option>
+                        <option>Riverside County</option>
+                        <option>Los Angeles County</option>
+                        <option>Ventura County</option>
+                        <option>Orange County</option>
+                        <option>San Diego County</option>
+                        <option>Imperial County</option>
+                    </select>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="age">County</label>
+                    <select id="age" class="pure-input-1-2">
+                        <option>(18-25)</option>
+                        <option>(25-30)</option>
+                        <option>(30-40)</option>
+                        <option>(40+)</option>
                     </select>
                     <label for="multi-first-name">Time spent together (month,years)?</label>
+
                     <input type="text" id="multi-first-name" class="pure-u-23-24" />
                         
+
+                    <input id="lease_length"type="text" id="multi-first-name" class="pure-u-23-24" />
+
                 </div>
             </div>
         </section>
@@ -47,78 +62,103 @@
                 <input type="radio" id="star1" name="rate" value="1" />
                 <label for="star1" title="text">1 </label>
 
-            <div class="rate">
-                <h1>On a scale of 1 - 5, did they make their payments on time?</h1>
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1</label>
-            </div>
-        
-            <div class="rate">
-                <h1>On a scale of 1 - 5, did they maintain the common area clean? </h1>
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
-            </div>
+    {{!--end of test start rating  --}}
 
-            <div class="rate">
-                <h1>On a scale of 1 - 5, how friendly are they?</h1>
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1</label>
-            </div>
 
-            <div class="rate">
-                <h1>On a scale of 1 - 5, did they bring a lot of people over?</h1>
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1</label>
-            </div>
-        </aside>
+    <div class="rate">
+        <div class="m_header_step" data-step="2">
+            <h1 class="js_error_placement quizz_question required_field">On a scale of 1 - 5, how well did they communicate?</h1>
+        </div>
+        <input id="communication" type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5</label>
+        <input id="communication" type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4</label>
+        <input id="communication"type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3</label>
+        <input id="communication"type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2</label>
+        <input id="communication"type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 </label>
+    </div>
 
-        <div class="wrapper_row" style="">
-                <div class="row js_error_placement_parent step_1">
-                    <div class="m_header_step" data-step="1">
-                        <h1 class="js_error_placement quizz_question ">Any further comments or Questions?</h1>
-                    <span class="not_mandatory">(optional)</span>
+    <div class="rate">
+        <div class="m_header_step" data-step="2">
+            <h1 class="js_error_placement quizz_question required_field">On a scale of 1 - 5, did they make their payments on time?</h1>
+        </div>
+        <input id="ontime_payments"type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5</label>
+        <input id="ontime_payments"type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4</label>
+        <input id="ontime_payments"type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3</label>
+        <input id="ontime_payments"type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2</label>
+        <input id="ontime_payments"type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1</label>
+    </div>
+
+    <div class="rate">
+        <div class="m_header_step" data-step="2">
+            <h1 class="js_error_placement quizz_question required_field">On a scale of 1 - 5, did they maintain the common area clean? </h1>
+        </div>
+        <input id="cleanliness"type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input id="cleanliness"type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input id="cleanliness"type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input id="cleanliness"type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input id="cleanliness"type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+    </div>
+
+    <div class="rate">
+        <div class="m_header_step" data-step="2">
+            <h1 class="js_error_placement quizz_question required_field">On a scale of 1 - 5, how friendly were they?</h1>
+        </div>
+        <input id="friendly"type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5</label>
+        <input id="friendly"type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4</label>
+        <input id="friendly"type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3</label>
+        <input id="friendly"type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2</label>
+        <input id="friendly"type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1</label>
+    </div>
+
+    <div class="rate">
+        <div class="m_header_step" data-step="2">
+            <h1 class="js_error_placement quizz_question required_field">On a scale of 1 - 5, did they bring a lot of people over?</h1>
+        </div>
+        <input id="guests"type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5</label>
+        <input id="guests"type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4</label>
+        <input id="guests"type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3</label>
+        <input id="guests"type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2</label>
+        <input id="guests"type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1</label>
+    </div>
+    
+    <div class="wrapper_row" style="">
+        <div class="row js_error_placement_parent step_1">
+            <div class="m_header_step" data-step="1">
+                <h1 class="js_error_placement quizz_question ">Any further Comments or Questions?</h1>
+                <span class="not_mandatory">(optional)</span>
+            </div>
+            
+            <div class="form_fields select_row">
+                <div class="form_input">
+                    <span><input id="comments" type="text" name="participation[promo_response_attributes][response_11728]" id="participation_promo_response_attributes_response_11728"></span>
                 </div>
-                
-                <div class="form_fields select_row">
-                    <div class="form_input">
-                        <span><input type="text" name="participation[promo_response_attributes][response_11728]" id="participation_promo_response_attributes_response_11728"></span>
-                    </div>
-                </div>
-            </div>
-        </div>     
-
+            </div>  
+            <button type="submit" >Submit</button>
+        </div>
     </div>
     
 
@@ -127,6 +167,8 @@
     <button type="submit" class="pure-button pure-button-primary">Cancel</button>
     {{!--end submit button  --}}
 </body>
+</section>
+</form>
 
     
 <script src="/js/roommatePost.js"></script>

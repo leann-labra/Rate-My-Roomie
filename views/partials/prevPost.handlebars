@@ -1,0 +1,33 @@
+
+                <!-- A single blog post -->
+                <section class="post-card postContainer">
+                    <header class="post-header">
+                        {{!-- <h1 id="post-title">{{post.title}}</h1> --}}
+                    </header>
+
+                    <div class="post-description">
+                        <ul class="post-preview">
+                            {{!-- <li>{{post.first_name}} {{post.last_name}}</li> --}}
+                            {{!-- <li>{{post.city, post.state}}</li> --}}
+                        </ul>
+                    </div>
+                    <p class="post-subtitle">
+                        Post made by: {{user.username}} on {{{format_date}}}
+                    <p>
+                </section>
+
+                <section class="post-card postContainer">
+                    <header class="post-header">
+                        <h1 id="post-title">DUMMY TITLE</h1>
+                    </header>
+
+                    <div class="post-description">
+                        <ul class="post-preview">
+                            <li>someone's name</li>
+                            <li>city, state</li>
+                        </ul>
+                    </div>
+                    <p class="post-subtitle">
+                        Post made by: {{user.username}} on {{{format_date}}}
+                    <p>
+                </section>
