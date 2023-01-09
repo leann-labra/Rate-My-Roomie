@@ -1,10 +1,11 @@
 const router = require("express").Router();
 const { User, Post} = require("../models");
 
+
 // getting homepage from handlebars
 router.get("/", async (req, res) => {
   try {
-    res.render("home",{
+    res.render("home", {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
