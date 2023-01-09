@@ -26,11 +26,13 @@
         </div>
         {{!-- list of preview posts --}}
         <div class="allpost-container">
+            {{!-- {{#if post.length}} --}}
             <div id="list" class="previewPosts" tabindex="-1">
-                {{!-- {{#each posts as |post| }} --}}
-                {{> prevPost}}
-                {{!-- {{/each}} --}}
+                {{#each posts }}
+                    {{> prevPost}}
+                {{/each}}
             </div>
+            {{!-- {{/if}} --}}
 
             {{!- post expanded --}}
             <div id="main" class="expandedPosts" tabindex="-1">
@@ -39,6 +41,7 @@
         </div>
     </section>
 </section>
-
-<script src="./js/logout.js"></script>
+<script src="./js/newPost.js"></script>
 <script src="./js/loginuser.js"></script>
+<script src="./js/logout.js"></script>
+
