@@ -136,14 +136,6 @@ h2, .content, label {
     color: whitesmoke;
 }
 
-/* styled image */
-.signing-upimg {
-     display: block;
-      margin: 0 auto;
-      margin-top: 40px;
-      width: 60%;
-}
-
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
@@ -172,7 +164,13 @@ h2, .content, label {
     padding: 0.5em 2em;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;    
+    width: 300px;  
+
+
 }
+
+
 
 a.pure-button-primary {
     background: white;
@@ -390,6 +388,18 @@ h3 {
 .brand-tagline {
     font-weight: 300;
     color: whitesmoke;
+}
+
+/* centers sign up form on page */
+#signup-form {
+    display: grid;
+    place-items: center;
+}
+
+/* styled image */
+.signing-upimg {
+    display: block;
+     width: 80%;
 }
 
 /* NAVBAR STYLE ON ROOMMATEPAGE */
