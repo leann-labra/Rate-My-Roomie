@@ -43,6 +43,10 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    rating:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
