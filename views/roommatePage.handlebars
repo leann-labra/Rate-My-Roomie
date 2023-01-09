@@ -28,8 +28,9 @@
         <div class="allpost-container">
             {{!-- {{#if post.length}} --}}
             <div id="list" class="previewPosts" tabindex="-1">
-                {{#each posts }}
-                    {{> prevPost}}
+                {{!-- making an each loop from a block parameter --}}
+                {{#each posts as |post| }}
+                    {{> prevPost post}}
                 {{/each}}
             </div>
             {{!-- {{/if}} --}}
