@@ -14,7 +14,7 @@ async function loginForm(e) {
   });
 
   if (res.ok) {
-    document.location.replace("/home");
+    document.location.replace("/roommatePage");
   } else {
     alert("Unable to login!");
   }
