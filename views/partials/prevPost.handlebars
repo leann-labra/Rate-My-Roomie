@@ -1,22 +1,20 @@
 
                 <!-- A single blog post -->
-                <section class="post-card postContainer">
+                <section id="preview-post" class="post-card postContainer">
                     <header class="post-header">
-                        {{!-- <h1 id="post-title">{{post.title}}</h1> --}}
+                        <h1>{{title}}</h1>
                     </header>
 
                     <div class="post-description">
                         <ul class="post-preview">
-                            {{#each posts }}
                             <li>{{first_name}} {{last_name}}</li>
-                            <li>{{post.city}}</li> 
+                            <li>{{city}}</li> 
                         </ul>
                     </div>
                     <p class="post-subtitle">
                         Post made by: {{user.name}} on {{{format_date}}}
                     <p>
                 </section>
-                        {{/each}} 
                 <section class="post-card postContainer">
                     <header class="post-header">
                         <h1 id="post-title">DUMMY TITLE</h1>
@@ -32,3 +30,5 @@
                         Post made by: {{user.username}} on {{{format_date}}}
                     <p>
                 </section>
+    <button id="deleteBtn" class="button-secondary pure-button">DELETE POST</button>
+    <script src="./js/newPost.js"></script>

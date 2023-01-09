@@ -1,42 +1,58 @@
 
-<section class="roommatePage-container">
-    <nav class="sidenav">
-        <ul class="nav-list">
-            {{!-- search site for roommate input --}}
-            <li class="nav-item pure-form">
-                <input type="text" id="site-search" class="pure-input-rounded">
-                <button id="search-btn" class="pure-button">Search</button>
-            </li>
-            <li class="nav-item">
-                <a class="pure-button addRoommate" href="/">HOME</a>
-            </li>
-            {{!-- button to link to add a roommate page --}}
-            <li class="nav-item">
-                <a class="pure-button addRoommate" href="/addRoommate">ADD A ROOMMATE</a>
-            </li>
-            <li>
-                <button id="logout" class="button-secondary pure-button">LOGOUT</button>
-            </li>
-        </ul>
-    </nav>
-    <section class="content-container">
-        <div class="header-container">
+<section id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
             <h1 class="brand-title">Rate Your Roommate</h1>
             <h2 class="brand-tagline">know before you room</h2>
-        </div>
-        {{!-- list of preview posts --}}
-        <div class="allpost-container">
-            <div id="list" class="previewPosts" tabindex="-1">
-                {{!-- {{#each posts as |post| }} --}}
-                {{> prevPost}}
-                {{!-- {{/each}} --}}
-            </div>
 
-            {{!- post expanded --}}
-            <div id="main" class="expandedPosts" tabindex="-1">
-                {{> expPost}}
-            </div>
+            <nav class="sidenav">
+                <ul class="nav-list">
+                    {{!-- search site for roommate input --}}
+                    <li class="nav-item">
+                        <a class="pure-button addRoommate" href="/">HOME</a>
+                    </li>
+                    <li>
+                        <label for="site-search">Search Roommate:</label>
+                        <input type="search" id="site-search" name="q">
+                        <button id="search-btn">Search</button>
+                    </li>
+                    {{!-- button to link to add a roommate page --}}
+                    <li class="nav-item">
+                        <a class="pure-button addRoommate" href="/addRoommate">ADD A ROOMMATE</a>
+                    </li>
+                    <li>
+                    <button id="logout" class="button-secondary pure-button">LOGOUT</button>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </div>
+
+    {{!-- list of short roommate posts --}}
+    <section id="list" class="pure-u-1 roommatePosts" tabindex="-1">
+        {{!-- {{#each posts as |post| }} --}}
+        {{> prevPost}}
+    {{!-- possibly can use Lilia's javascript things as reference --}}
+    <script src="js/roommatePost.js"></script>
+        {{#each posts as |post| }}
+        {{> prevPost}}
+        {{/each}}
+        {{!-- possibly can use Lilia's javascript things as reference --}}
+            {{!-- <script src="js/roommatePost.js"></script> --}}
+    </section>
+
+    {{!-- single roommate post expanded --}}
+    <section id="main" class="pure-u-1 individualPosts" tabindex="-1">
+        {{> expPost}}
+
+    {{!-- use lilia's code as reference --}}
+    <script src="js/roommatePost.js"></script>
+    </section>
+</section>
+<script src="./js/logout.js" </script>
+        
+        {{!-- use lilia's code as reference --}}
+            {{!-- <script src="js/roommatePost.js"></script> --}}
     </section>
 </section>
 
