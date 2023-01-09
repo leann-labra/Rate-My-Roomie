@@ -24,14 +24,14 @@
   This will be on heroku.
 
   ## Usage
-  On the homepage, the user will be able to either click on get started or login and will redirect them to the correct screen. 
+  On homepage, you must login or sign up in order to view posts. After which, you will be redirected onto a the roommate page with all posts rendered on   the screeen.
 
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen) <br/>
   This application is under the MIT
 
   ## Contribution
-  none
+  Leann Labra, Aldo Ibuado, Cherie Walker, and Lilia Hernandez.
 
   ## Tests
   It was trial and error.
