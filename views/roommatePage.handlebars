@@ -8,11 +8,11 @@
                 <button id="search-btn" class="pure-button">Search</button>
             </li>
             <li class="nav-item">
-                <a class="pure-button addRoommate" href="views/home">HOME</a>
+                <a class="pure-button addRoommate" href="/">HOME</a>
             </li>
             {{!-- button to link to add a roommate page --}}
             <li class="nav-item">
-                <a class="pure-button addRoommate" href="views/">ADD A ROOMMATE</a>
+                <a class="pure-button addRoommate" href="/addRoommate">ADD A ROOMMATE</a>
             </li>
             <li>
                 <button id="logout" class="button-secondary pure-button">LOGOUT</button>
@@ -26,11 +26,13 @@
         </div>
         {{!-- list of preview posts --}}
         <div class="allpost-container">
+            {{!-- {{#if post.length}} --}}
             <div id="list" class="previewPosts" tabindex="-1">
-                {{!-- {{#each posts as |post| }} --}}
-                {{> prevPost}}
-                {{!-- {{/each}} --}}
+                {{#each post}}
+                    {{> prevPost}}
+                {{/each}}
             </div>
+            {{!-- {{/if}} --}}
 
             {{!- post expanded --}}
             <div id="main" class="expandedPosts" tabindex="-1">
@@ -39,6 +41,7 @@
         </div>
     </section>
 </section>
-
-<script src="./js/logout.js"></script>
+<script src="./js/newPost.js"></script>
 <script src="./js/loginuser.js"></script>
+<script src="./js/logout.js"></script>
+
