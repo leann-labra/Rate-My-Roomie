@@ -26,6 +26,25 @@
 
 }
 
+/* @font-face {
+    font-family: 'avilock_boldbold';
+    src: url('../fonts/AvilockBold-JR6Ym.ttf') format('woff2'),
+         url('../fonts/AvilockBold-JR6Ym.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+
+@font-face {
+    font-family: 'g_ganti_tahunregular';
+    src: url('../fonts/GantiTahun-8MXpM.otf') format('woff2'),
+         url('../fonts/GantiTahun-8MXpM.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -62,6 +81,10 @@ h6,
 label {
     color: #34495e;
     font-family: 'neotericregular', Arial, sans-serif;
+}
+
+label {
+    font-family: 'g_ganti_tahunregular', Arial, sans-serif;
 }
 
 .logo {
@@ -187,6 +210,7 @@ a.pure-button-primary {
 .white{
     color:white;
 }
+
 
 /*
  * -- MENU STYLES --
@@ -396,7 +420,7 @@ h3 {
 }
 
 /* centers sign up form on page */
-#signup-form, #login-form {
+#signup-form, #login-form, #create-post {
     display: grid;
     place-items: center;
 }
