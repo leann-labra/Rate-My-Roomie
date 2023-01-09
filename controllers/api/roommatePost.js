@@ -1,11 +1,13 @@
 const router = require('express').Router();
+const session = require("express-session");
 const { Post } = require("../../models");
 
 // Create New Post
 router.post("/", (req, res) => {
-
+    const user_id = `SELECT user.id FROM post, 
+                      user.name as user_id`;
     // create post with user input; user id from session data
-    Post.create({
+    Post.create(user_id, {
       title:req.body.title,
       first_name:req.body.first_name,
       last_name:req.body.last_name,
@@ -21,6 +23,7 @@ router.post("/", (req, res) => {
       comments:req.body.comments,
       user_id:req.session.user_id
     })
+    console.log
       .then(newPost => {
         res.json(newPost);
       })
