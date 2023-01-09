@@ -23,7 +23,6 @@ router.post("/", (req, res) => {
       comments:req.body.comments,
       user_id:req.session.user_id
     })
-    console.log
       .then(newPost => {
         res.json(newPost);
       })
