@@ -114,7 +114,7 @@ label {
 p {
     font-family: 'neotericregular', Times, serif;
     font-size: 15px;
-    color: whitesmoke;
+    color:gray;
 }
 
 .brand-title {
@@ -613,7 +613,7 @@ aside {
 
 section {
     width: 40%;
-    color: white;
+    color:gray;
     float: left;
     padding: 10px;
     margin: 10px;
