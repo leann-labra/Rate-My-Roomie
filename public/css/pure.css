@@ -423,6 +423,7 @@ h3 {
     *display: inline;
     zoom: 1;
 }
+
 .nav-item a {
     background: transparent;
     border: 2px solid rgb(176, 202, 219);
@@ -432,6 +433,7 @@ h3 {
     text-transform: uppercase;
     font-size: 85%;
 }
+
 .nav-item a:hover,
 .nav-item a:focus {
     border: 2px solid rgb(61, 146, 201);
@@ -457,7 +459,7 @@ h3 {
   
   .sidenav li {
     text-align: center;
-    padding: 10%;
+    padding: 5%;
     text-decoration: none;
     font-size: 50%;
     color: white;
@@ -478,9 +480,12 @@ h3 {
     text-align: center;
 }
 
-.allPosts-container {
-    flex-direction: row;
+.allpost-container
+#list
+#main {
+  flex-direction: row !important;
 }
+
 #pure-input-rounded-side {
     padding: 0px; 
     width: 100%;
