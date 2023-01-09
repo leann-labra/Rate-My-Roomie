@@ -455,6 +455,28 @@ h3 {
     height: 15px;    
 }
 
+/* lili's updated addroommate changes  */
+
+
+aside {
+    width: 40%;
+    float: right;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    height: 100px;
+    display: inline;
+}
+
+section {
+    width: 40%;
+    color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+
+}
 
 /*  -- POST STYLES --
  * Styles relevant to the posts found on roommatePost and expandedRoommatePost.
@@ -595,4 +617,41 @@ h3 {
     .splash-head {
         font-size: 300%;
     }
+}
+
+/*start rating */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
