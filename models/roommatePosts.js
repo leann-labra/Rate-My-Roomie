@@ -53,7 +53,7 @@ Post.init(
     },
     comments:{
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     age:{
       type: DataTypes.STRING,
