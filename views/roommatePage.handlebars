@@ -30,15 +30,15 @@
             <div id="list" class="previewPosts" tabindex="-1">
                 {{!-- making an each loop from a block parameter --}}
                 {{#each posts as |post| }}
-                    {{> prevPost post}}
+                    {{> prevPost}}
                 {{/each}}
             </div>
             {{!-- {{/if}} --}}
 
-            {{!- post expanded --}}
+            {{!-- {{!- post expanded --}}
             <div id="main" class="expandedPosts" tabindex="-1">
                 {{> expPost}}
-            </div>
+            </div> --}}
         </div>
     </section>
 </section>
