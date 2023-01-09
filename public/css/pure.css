@@ -466,22 +466,36 @@ h3 {
     background-color: #2d3e50;
     overflow-x: hidden;
     padding-top: 20px;
-    text-align: center;  
+    text-align: center; 
   }
   
-.sidenav li {
+.sidenav ul {
     text-align: center;
     padding: 5%;
-    text-decoration: none;
     font-size: 50%;
     color: white;
     display: block;
 }
-  
+
 .sidenav a:hover {
     color: whitesmoke;
 }
 
+.nav-list {
+    padding: 2%;
+}
+
+.nav-list > .nav-item > a {
+    padding: 5%;
+    width: 100%;
+    font-size: 200%;
+}
+
+.nav-list > .nav-item > a, input{
+    padding: 5%;
+    width: 100%;
+    font-size: 200%;
+}
 #pure-input-rounded-side {
     padding: 0px; 
     width: 100%;
