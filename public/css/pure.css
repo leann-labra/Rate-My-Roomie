@@ -375,7 +375,6 @@ h3 {
 .sidebar {
     background: rgb(61, 79, 93);
     color: #fff;
-
 }
 
 .brand-title,
@@ -427,11 +426,13 @@ h3 {
 }
 
 /* helps the sidebar look clean */
-
+.roommatePage-container {
+    padding-left:20%;
+}
 .sidenav {
     height: 100%;
-    width: 190px;
-    position: fixed;
+    width: 20%;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -441,10 +442,11 @@ h3 {
     text-align: center;  
   }
   
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
+  .sidenav li {
+    text-align: center;
+    padding: 10%;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 50%;
     color: white;
     display: block;
   }
@@ -452,9 +454,22 @@ h3 {
   .sidenav a:hover {
     color: whitesmoke;
   }
+.content-container {
+    flex-direction: column;
+    /* padding-left:60%; */
+    background-color: #2d3e50;
+    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
+}
 
-#site-search {
-    padding: 15px; 
+.header-container {
+    text-align: center;
+}
+
+.allPosts-container {
+    flex-direction: row;
+}
+#pure-input-rounded-side {
+    padding: 0px; 
     width: 100%;
     height: 15px;    
 }
@@ -591,6 +606,7 @@ h3 {
     }
 
 }
+
 
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
