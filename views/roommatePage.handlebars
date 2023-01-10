@@ -39,19 +39,13 @@
         </div>    
 
         {{!-- list of preview posts --}}
-        <div class="rooomate">
-            <div class="header">
+        <div class="allpost-container">
+                 <div class="header">
                     <h1 class="brand-title">Rate Your Roommate</h1>
                     <h2 class="brand-tagline">know before you room</h2>
                 </div>
-            <nav class="navRoom">
-                        <button><a class="pure-button" href="/">HOME</a></button>
-                        <button><a class="pure-button" href="/addRoommate">ADD A ROOMMATE</a></button>
-                       <button><a class="pure-button" id="logout">LOGOUT</a></button>
-            </nav>
-                 
             
-            <div class="roommate" tabindex="-1">
+            <div class="previewPosts" tabindex="-1">
                 {{!-- making an each loop from a block parameter --}}
                 {{#each posts as |post| }}
                     {{> prevPost}}
@@ -59,9 +53,6 @@
             </div>
         </div>
     </div>
-    {{#if title}}
-
-    {{/if}}
 </section>
 
 <script src="./js/newPost.js"></script>
