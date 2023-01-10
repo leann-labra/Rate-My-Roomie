@@ -50,4 +50,3 @@ sequelize.sync({ force: false }).then(() => {
   );
 });
 
-//----copied from boilerplate activities server.js----//
