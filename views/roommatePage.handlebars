@@ -1,5 +1,43 @@
-
+<section class="roommatePage-container">
+        {{!-- side nav on larger screens --}}
+            <nav class="sidenav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button addRoommate" href="/">HOME</a>
+                    </li>
+                    {{!-- button to link to add a roommate page --}}
+                    <li class="nav-item">
+                        <a class="pure-button" href="/addRoommate">ADD A ROOMMATE</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a id="logout" class="button-secondary pure-button">LOGOUT</a>
+                    </li>
+                </ul>
+            </nav>
+            {{!-- pure menu --}}
+            <div id="nav"  class="pure-u navPhone">
+                <a href="#" id="menuLink" class="nav-menu-button">Menu</a>
+                    <div class="nav-inner">
+                        <div class="pure-menu">
+                            <ul class="pure-menu-list">
+                                <li class="pure-menu-item">
+                                    <a href="/" class="pure-menu-link">HOME</a>
+                                </li>
+                                <li class="pure-menu-item">
+                                    <a href="/addRoommate" class="pure-menu-link">ADD ROOMMATE</a>
+                                </li>
+                                <li class="pure-menu-item">
+                                    <a id="logout"class="pure-menu-link">LOGOUT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
             
+
+            </ul>
+        </div>    
+
         {{!-- list of preview posts --}}
         <div class="rooomate">
             <div class="header">
@@ -24,5 +62,8 @@
     {{#if title}}
 
     {{/if}}
+</section>
+
+<script src="./js/newPost.js"></script>
 <script src="./js/logout.js"></script>
 <script src="./js/loginuser.js"></script>

@@ -1,14 +1,28 @@
 
                 <!-- A single blog post -->
                 <section id="preview-post" class="post-card postContainer">
-                    <header class="post-header">
-                       <h1><a href="/expPost" class="pure-menu-link">{{title}}</a></h1>
+                    <header class="prevpost-header" id="postHeader">
+                        <h1 href="/post/{{id}}">{{title}}</h1>
+                        <h2 id="font">{{rating}}/5</h2>
                     </header>
                     <div class="post-description">
                         <ul class="post-preview">
-                            <li>{{first_name}} {{last_name}}</li>
-                            <li>{{city}}</li> 
+                            Roomie name:<li>{{first_name}} {{last_name}}</li>
+                            City:<li>{{city}}</li> 
+                            County:<li>{{county}}</li>
+                            Age:<li>{{age}}</li>
+                            Length of Lease:<li>{{lease_length}}</li>
                         </ul>
+                    
+                        <hr> 
+                        <p id="comment">
+                            COMMENTS:{{comments}}
+                        </p>
                     </div>
+                    <p class="post-subtitle">
+                        Post made by: {{user.name}}
+                    <p>
                 </section>
+            
+
     <script src="./js/newPost.js"></script>
