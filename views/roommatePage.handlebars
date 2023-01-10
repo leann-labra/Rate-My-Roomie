@@ -40,12 +40,11 @@
 
         {{!-- list of preview posts --}}
         <div class="allpost-container">
-            <div class="sidebar">
                  <div class="header">
                     <h1 class="brand-title">Rate Your Roommate</h1>
                     <h2 class="brand-tagline">know before you room</h2>
                 </div>
-            </div>
+            
             <div class="previewPosts" tabindex="-1">
                 {{!-- making an each loop from a block parameter --}}
                 {{#each posts as |post| }}
@@ -53,7 +52,10 @@
                 {{/each}}
             </div>
         </div>
-    
+    </div>
+    {{#if title}}
+
+    {{/if}}
 </section>
 
 <script src="./js/newPost.js"></script>
