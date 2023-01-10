@@ -716,10 +716,13 @@ section {
         height: 40px;
     }
 
-    
+
 /* FOOTER */
+
 .footer {
     padding: 1em 0;
+    display: flex;
+    justify-content: center;
 }
 .footer a {
     color: #ccc;
