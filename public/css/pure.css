@@ -98,10 +98,7 @@ label {
     width: 250px;
     margin: 10px;
 }
-.emailLabel{
-    display:flex;
-    justify-content: center;
-}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -161,10 +158,7 @@ h2, .content, label {
     background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
     color: whitesmoke;
 }
-.content{
-    background:cover;
-    padding:2rem;
-}
+
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
@@ -371,18 +365,6 @@ h2 {
 
 /* STYLES ON ROOMMATEPAGE */
 /* LAYOUT */
-
-.roommate{
-    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
-    color:white;
-    width:100%;
-}
-
-.roommateNav{
-    display:flex;
-    background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
-    color:gray;
-}
 a {
     text-decoration: none;
     color: rgb(61, 146, 201);
@@ -424,19 +406,16 @@ h3 {
 .brand-title,
 .brand-tagline {
     margin: 0;
-    padding:1rem;
 }
 
 .brand-title {
     background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);
-    color:whitesmoke;
+    color: #2d3e50;
     text-transform: uppercase;
-    font-size: 3rem;
 }
 .brand-tagline {
     font-weight: 300;
     color: whitesmoke;
-    font-size:2rem;
 }
 
 .page-title {
@@ -467,9 +446,11 @@ h3 {
 /* roommatepage styling */
 /* helps the sidebar look clean */
 .roommatePage-container {
+    padding-left:20%;
     width:100%;
     height:80%;
     display: flex;
+    flex-direction: column;
 }
 .sidenav {
     height: 100%;
@@ -531,15 +512,7 @@ h3 {
     *display: inline;
     zoom: 1;
 }
-.navRoom{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
-.roommateButton{
-
-}
 .nav-item a {
     background: transparent;
     border: 2px solid rgb(176, 202, 219);
@@ -557,7 +530,9 @@ h3 {
 }
 
 /* helps the sidebar look clean */
-
+.roommatePage-container {
+    padding-left:20%;
+}
 .sidenav {
     height: 100%;
     width: 20%;
