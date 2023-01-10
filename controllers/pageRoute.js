@@ -14,6 +14,7 @@ router.get("/", async (req, res) => {
         "city",
         "age",
         "lease_length",
+        "rating",
       ],
       include: {
         model: User,
