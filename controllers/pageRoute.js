@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
         "age",
         "lease_length",
         "rating",
-      ],
+        "comments",      ],
       include: {
         model: User,
         attributes: ["name"],
